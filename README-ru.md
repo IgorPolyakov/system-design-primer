@@ -799,7 +799,7 @@ l10n:p -->
 
 >**Внимание, этот раздел находится в стадии разработки**
 
-| Задачи на проектировние | |
+| Задачи на проектирование | |
 |---|---|
 | Хэш таблица | [Решение](solutions/object_oriented_design/hash_table/hash_map.ipynb)  |
 | Кэширование с удалением давно используемых (Least recently used - LRU) | [Решение](solutions/object_oriented_design/lru_cache/lru_cache.ipynb)  |
@@ -2239,7 +2239,7 @@ NoSQL - это набор данных, представленных в виде
 Для описания свойств NoSQL баз данных используют **BASE** свойства. Согласно [Теореме CAP](#теорема-cap), BASE придерживается доступности данных, а не их согласованности.
 
 * **В целом доступные** - система гарантирует доступность.
-* **Неокончательное (soft) удаление** - состояние ситемы может со временем измениться, даже без дополнительных операций.
+* **Неокончательное (soft) удаление** - состояние системы может со временем измениться, даже без дополнительных операций.
 * **Согласованность в конечном счете (eventual consistency)** - данные в системе станут согласованными в течение некоторого времени, если в течение этого времени не будут приходить новые данные.
 
 Вместе с выбором между [SQL или NoSQL](#sql-или-nosql), надо сделать выбор типа NoSQL базы данных, которая подходит для вашего сценария использования. В следующей секции представлены **базы ключ-значение**, **документориентированные базы данных**, **колоночные базы данных** или **графовые базы данных**.
@@ -2611,7 +2611,7 @@ l10n:p -->
 
 ### Кэширование в приложениях
 
-Системы кэширования в памяти (например, Memcached и Redis) являются хранилищами типа "ключ-значение", которые находятся между вашим приложением и хранилищем данных. Они обычно быстрее, так как данныe хранятся в оперативной памяти, а не на жестком диске, как это обычно бывает в случае с базами данных. Количество оперативной памяти имеет больше ограничений, чем жесткий диск, поэтому [алгоритмы очистки кэша](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%BA%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F), как например [вытеснение давно неиспользуемых (Least recently used, LRU)](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%BA%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F#Least_recently_used_(%D0%92%D1%8B%D1%82%D0%B5%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%B0%D0%B2%D0%BD%D0%BE_%D0%BD%D0%B5%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC%D1%8B%D1%85)) помогают удалять из кэша "холодные" записи и оставлять в памяти "горячие".
+Системы кэширования в памяти (например, Memcached и Redis) являются хранилищами типа "ключ-значение", которые находятся между вашим приложением и хранилищем данных. Они обычно быстрее, так как данные хранятся в оперативной памяти, а не на жестком диске, как это обычно бывает в случае с базами данных. Количество оперативной памяти имеет больше ограничений, чем жесткий диск, поэтому [алгоритмы очистки кэша](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%BA%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F), как например [вытеснение давно неиспользуемых (Least recently used, LRU)](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_%D0%BA%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F#Least_recently_used_(%D0%92%D1%8B%D1%82%D0%B5%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%B0%D0%B2%D0%BD%D0%BE_%D0%BD%D0%B5%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC%D1%8B%D1%85)) помогают удалять из кэша "холодные" записи и оставлять в памяти "горячие".
 
 Redis включает дополнительную функциональность:
 
@@ -3669,7 +3669,7 @@ l10n:p -->
 | Design an online multiplayer card game | [indieflashblog.com](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)<br/>[buildnewgames.com](http://buildnewgames.com/real-time-multiplayer/) |
 | Design a garbage collection system | [stuffwithstuff.com](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)<br/>[washington.edu](http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf) |
 | Design an API rate limiter | [https://stripe.com/blog/](https://stripe.com/blog/rate-limiters) |
-| Design a Stock Exchange (like NASDAQ or Binance) | [Jane Street](https://youtu.be/b1e4t2k2KJY)<br/>[Golang Implementation](https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/)<br/>[Go Implemenation](http://bhomnick.net/building-a-simple-limit-order-in-go/) |
+| Design a Stock Exchange (like NASDAQ or Binance) | [Jane Street](https://youtu.be/b1e4t2k2KJY)<br/>[Golang Implementation](https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/)<br/>[Go Implementation](http://bhomnick.net/building-a-simple-limit-order-in-go/) |
 | Add a system design question | [Contribute](#contributing) |
 l10n:p -->
 
@@ -3701,7 +3701,7 @@ l10n:p -->
 | Design an online multiplayer card game | [indieflashblog.com](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)<br/>[buildnewgames.com](http://buildnewgames.com/real-time-multiplayer/) |
 | Design a garbage collection system | [stuffwithstuff.com](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)<br/>[washington.edu](http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf) |
 | Design an API rate limiter | [https://stripe.com/blog/](https://stripe.com/blog/rate-limiters) |
-| Design a Stock Exchange (like NASDAQ or Binance) | [Jane Street](https://youtu.be/b1e4t2k2KJY)<br/>[Golang Implementation](https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/)<br/>[Go Implemenation](http://bhomnick.net/building-a-simple-limit-order-in-go/) |
+| Design a Stock Exchange (like NASDAQ or Binance) | [Jane Street](https://youtu.be/b1e4t2k2KJY)<br/>[Golang Implementation](https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/)<br/>[Go Implementation](http://bhomnick.net/building-a-simple-limit-order-in-go/) |
 | Add a system design question | [Добавить](#содействуйте) |
 
 <!-- l10n:p
@@ -3771,8 +3771,8 @@ l10n:p -->
 | Хранилище данных | **Bigtable** - распределённая колоночная база данных от Google | [harvard.edu](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf) |
 | Хранилище данных | **HBase** - Реализация Bigtable с открытым исходным кодом | [slideshare.net](http://www.slideshare.net/alexbaranau/intro-to-hbase) |
 | Хранилище данных | **Cassandra** - распределённая колоночная база данных от Facebook | [slideshare.net](http://www.slideshare.net/planetcassandra/cassandra-introduction-features-30103666)
-| Хранилище данных | **DynamoDB** - Документно-ориенитрованная база данных от Amazon | [harvard.edu](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf) |
-| Хранилище данных | **MongoDB** - Документно-ориенитрованная база данных | [slideshare.net](http://www.slideshare.net/mdirolf/introduction-to-mongodb) |
+| Хранилище данных | **DynamoDB** - Документно-ориентированная база данных от Amazon | [harvard.edu](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf) |
+| Хранилище данных | **MongoDB** - Документно-ориентированная база данных | [slideshare.net](http://www.slideshare.net/mdirolf/introduction-to-mongodb) |
 | Хранилище данных | **Spanner** - Глобально-распределённая база данных от Google | [research.google.com](http://research.google.com/archive/spanner-osdi2012.pdf) |
 | Хранилище данных | **Memcached** - Распределённый кэш, хранящийся в памяти | [slideshare.net](http://www.slideshare.net/oemebamo/introduction-to-memcached) |
 | Хранилище данных | **Redis** - Распределённая система кэширования с возможностью сохранения и типами данных | [slideshare.net](http://www.slideshare.net/dvirsky/introduction-to-redis) |
